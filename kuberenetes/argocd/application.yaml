@@ -4,13 +4,13 @@ metadata:
   name: go-app-argo-config
   namespace: argocd
 spec:
-  project: itd-k8s
+  project: k8s
   source:
-    repoURL: https://github.com/jaintpharsha/Devops-ITD-Aug-2023.git
+    repoURL: https://github.com/Divya7508/Devops.git
     targetRevision: main
-    path: Kubernetes/argocd/kube_configs
+    path: Kubernetes/argocd/kubeconfigs
   destination:
-    server: https://13.234.238.53:6443
+    server: https://172.31.9.87:6443
     namespace: default
   syncPolicy:
     syncOptions:
