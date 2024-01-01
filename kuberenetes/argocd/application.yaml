@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Divya7508/Devops.git
     targetRevision: main
-    path: Kubernetes/argocd/kubeconfigs
+    path: kuberenetes/argocd/kubeconfigs
   destination:
     server: https://172.31.9.87:6443
     namespace: default
