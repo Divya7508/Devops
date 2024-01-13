@@ -10,7 +10,7 @@ terraform {
 
         backend "s3" {
         bucket = "s3-ilkal"      #s3-backend-terraform-project-1
-        key    = "main/terraform.tfstate"
+        key    = "main/data_block/terraform.tfstate"
         region = "ap-south-1"
         dynamodb_table = "s3-tumkur-locking-table"  #s3-backend-locking-table
     }
