@@ -1,4 +1,4 @@
-local {
+locals {
  hash_key_local = "LockID"
 }
 
