@@ -1,19 +1,17 @@
 def readpom
 pipeline{
-
-agent any
-
+       agent any
 tools{
-maven 'maven-3.9.5'
+        maven 'maven-3.9.5'
  }
 stages{
     stage('checkout'){
       steps{
-    git 'https://github.com/devillierscbe/hello-world-war.git'
+                git 'https://github.com/Divya7508/Devops.git'
        }
     }
     stage('MavenBuild'){
-      steps{
-        sh "mvn clean package"
+       steps{
+                 sh "mvn clean package"
        }
     }
