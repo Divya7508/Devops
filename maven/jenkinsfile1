@@ -1,0 +1,19 @@
+def readpom
+pipeline{
+
+agent any
+
+tools{
+maven 'maven-3.9.5'
+ }
+stages{
+    stage('checkout'){
+      steps{
+    git 'https://github.com/devillierscbe/hello-world-war.git'
+       }
+    }
+    stage('MavenBuild'){
+      steps{
+        sh "mvn clean package"
+       }
+    }
